@@ -11,6 +11,7 @@ import tinys3
 import yaml
 import pytz
 import boto3
+import requests
 
 GPIO.setmode(GPIO.BCM)
 
@@ -74,7 +75,7 @@ def takepic(datetime):
 		}
 	requests.post(url = http://54.160.238.67:5000/newpic, data = data)
 try:
-
+    setup()
     while True:
 		tz = pytz.timezone('Asia/Kolkata')
 		now = datetime.now()
